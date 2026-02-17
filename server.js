@@ -33,7 +33,7 @@ const corsOptions = {
   optionsSuccessStatus: 200
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Serve static files from uploads folder
 app.use('/uploads', cors(corsOptions), (req, res, next) => {
